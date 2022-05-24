@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-primary-color: hsla(256, 52%, 50%, 1);
+  --brand-white: hsla(258, 100%, 98%, 1);
+  --link-blue: hsla(216, 98%, 52%, 1);
+  --link-blue-hover: rgb(12, 81, 185);
+
+  font-size: 62.5%;
+}
+
+/* =============Geral=============== */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+
+  background-color: var(--brand-primary-color);
+
+  min-width: 100%;
+  min-height: 100%;
+}
+
+main {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 2.5rem;
+}
+
+a {
+  color: var(--link-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(12, 81, 185);
+}
+
+button {
+  border: 0;
+  border-radius: 0.8rem;
+}
+
+button {
+  border: 0;
+  border-radius: 0.8rem;
+}
+
+/* =============Header=============== */
+header {
+  padding-top: 15%;
+  padding-bottom: 4rem;
+}
+
+/* =============Logo=============== */
+header svg {
+  height: 5.8rem;
+}
+
+/* =============Container=============== */
+div.container {
+  width: 85vw;
+  max-width: 52.4rem;
+
+  background-color: var(--brand-white);
+
+  padding-inline: 3.2rem;
+  padding-block: 2.8rem;
+
+  margin-inline: auto;
+
+  border-radius: 1rem;
+}
+
+/* =============Form=============== */
+
+form {
+  padding-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+label {
+  font-weight: 400;
+  line-height: 3.6rem;
+}
+
+input:focus {
+  border: 0;
+  outline: none;
+}
+
+div.input-group-text {
+  text-align: start;
+}
+
+div.input-group-text div.input-w-icon {
+  background-color: var(--brand-white);
+
+  width: 100%;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  overflow: overlay;
+
+  border: solid;
+  border-width: 0.02rem;
+  border-color: hsla(0, 0%, 46%, 1);
+  border-radius: 0.6rem;
+}
+
+div.input-w-icon svg {
+  width: 2rem;
+  height: 2rem;
+
+  margin-left: 0.5rem;
+}
+
+div.input-group-text input {
+  width: 100%;
+
+  font-size: 1.6rem;
+  background-color: var(--brand-white);
+
+  border: 0;
+  padding: 0.8rem;
+}
+
+div.input-group-text > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.input-group-text a {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+div.input-group-radio input {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+div.input-group-radio {
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding-top: 1.2rem;
+  padding-bottom: 1.6rem;
+}
+
+form button {
+  width: 100%;
+  height: 3.8rem;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--brand-white);
+
+  background-color: var(--brand-primary-color);
+}
+
+form button:hover {
+  background-color: hsla(251, 71%, 25%, 1);
+}
+
+/* =============Divider=============== */
+div.container p.divider {
+  font-size: 1.8rem;
+  color: hsla(0, 9%, 72%, 1);
+
+  display: inline;
+}
+
+div.container p.divider::before,
+div.container p.divider::after {
+  width: 42%;
+  height: 0.15rem;
+
+  content: '';
+  background-color: hsla(0, 9%, 72%, 1);
+
+  display: inline-block;
+  margin-bottom: 0.255rem;
+}
+
+div.container p.divider::before {
+  margin-right: 0.8rem;
+}
+
+div.container p.divider::after {
+  margin-left: 0.8rem;
+}
+
+/* =============Google Button=============== */
+button.google-signin {
+  width: 100%;
+
+  letter-spacing: 0.06rem;
+  font-size: 1.4rem;
+
+  background-color: var(--brand-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  border: solid;
+  border-width: 0.2rem;
+  border-color: hsla(0, 9%, 72%, 1);
+
+  margin-top: 2rem;
+  padding-block: 1.2rem;
+}
+
+button.google-signin:hover {
+  background-color: rgba(190, 177, 177, 0.189);
+}
+
+button.google-signin > svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+div.container p.signup {
+  font-size: 1.6rem;
+  padding-top: 2.5rem;
+}
